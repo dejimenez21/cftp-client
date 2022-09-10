@@ -1,14 +1,17 @@
 <template>
   <div class="home">
     <h1>CFTP Server Statistics</h1>
+    <ClientsTable />
   </div>
 </template>
 
 <script>
+import ClientsTable from '../components/ClientsTable.vue';
+
 export default {
   name: 'HomePage',
-  props: {
-    msg: String,
+  components: {
+    ClientsTable,
   },
 };
 </script>
